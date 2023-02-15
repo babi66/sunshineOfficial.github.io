@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+	<style>			
+	     header   {
+	        letter-spacing:6px;
+		     background: URL(file:///C:/Users/Air%20Me/Desktop/sunshine/nm.jpg);
+	        padding:10px;
+            color: white;
+	     }
+		img { 
+    padding:1px;
+	margin:1px;
+	height:150px;
+	width:150px;
+	}
+		 
+body     {
+		   font-family:tahoma;
+		   text-align:center;
+           background:linear-gradient(#006992,#2e1760);
+		   color:orange;
+	     }		
+section  {
+	        padding:30px;
+		    margin-bottom:40px;
+		  }
+.container{ 
+            display:flex;
+	        justify-content:center;
+		    flex-wrap:wrap;
+		   }
+ .card  {	
+			border-radius:20px;
+		    border:1px solid #ccc;
+		    background-color:blue;
+		    margin: 25px;
+            padding: 25px;
+		    box-shadow: 6px 6px 6x rgba(0,0,0,0.3);
+		}
+ button, .button {
+		           background:blue;
+		           border: 2px ;
+				   color:yellow;
+				   padding:6px;
+				   width:25%;
+				   margin-bottom:10px;
+				   border-radius:20px;
+		           }			    				 
+  @media screen and (min-width: 50em){
+  .card{
+          flex-basis:325px;
+	    }
+  header h1{
+		     font-size:5em;
+			 font-family:
+			 }			 
+
+.footer{
+	    padding:30px;
+	    background:white;
+		color: orange;
+	    }	    			
+			border-radius: 50%;
+			border:10px dashed black;
+			padding: 250px;
+			background-color:white;
+			}
+		h1 {
+			font-size: 100px;
+			padding: 1%:
+			color: white;
+			}
+.container {
+			background: teal;
+			margin: 10px;
+			padding: 10px;
+			color: white;	
+		    }
+ td{
+    padding:10px;
+	}
+	table{
+		margin: auto;
+	}
+			
+	</style>
+</head>
+<body>
+<header>
+<h1><img src=" biya.png" ></img>SUNSHINE<img src=" biya.png" ></img></h1>
+	 <h4>
+	    &#10002; Primary and secondary school
+		We Work Alway's To Build Beautiful and Educated children's
+	 </h4>
+   </header>
+   <section>
+      <h2> YOUR ENREGISTER FORM:</h2>
+   </section>
+   <table>
+       <tr>
+	     <td>Name:</td>
+		 <td><input type="text" size="25" name="my-name"></td>
+	   </tr>
+	   <tr>
+	     <td> country:</td>
+	     <td><input type="text" size="25" name="my-country"></td>
+	   </tr>
+	   <tr>
+	     <td>SCHOOL TYPE:</td>
+		 <td><select name="YOUR-SCHOOL TYPE">
+		      <option> primary </option>
+			  <option> secondary </option>
+			   </td>
+             </select>			   
+	   </tr>
+	   <tr><td>Section(Grade):</td>
+	   <td>
+	   <input type="number" name="my-qty" value="UKG" min="UKG" max="12">
+	   <small>(max 12)</small>
+	   </td>
+	   </tr>
+	   <tr>
+	     <td> Sex :</td>
+		 <td><select name="YOUR-Sex">
+		      <option> female </option>
+			  <option> male </option>
+			   </td>
+             </select>			   
+	   </tr>
+		<td colspan="2">
+		<input class="button" type="reset" value="clear"" onclick="document.getElementById('my-register').style.display= 'none'";>
+		<a href="sub.html"><input class="button" type="reset" value="Submit" ></a>
+		</table>
+<div id ="my-form">
+   </div>
+   </form>
+   <div class="footer">
+   <h3>Thanks for chooseing us.</h3>
+   <div class="container">
+   <article class="card">
+		<h3>we serve with.</h3>
+		<p>&#10004; We Have agood Teacher's with clean class & Better View of learning place 
+		    for our student's.</p>
+   </article>
+   <article class="card">
+		<h3>Contact Us:</h3>
+		<p>&#10004; We would love to serve  you.
+		<br> &#9993;:Call or email us. <br>
+		&#9742;:Mobile: 0976420274// Tel:0462213456
+   </article>
+   <article class="card">
+		<h3>for parents</h3>
+      <p> please insert your view point//&#9997;</p><br>
+          <input type="text" size="80" name="my-for parents">
+   </article>
+  </div>
+  </header>
+   <script>
+  
+  function Submit(){
+var orderForm = document.getElementById ("my-form");
+results = "<h3>Success</h3> thank you for prefer us Now you are our student good luck.";
+results +="<br>Name: " + orderForm.elements["my-name"].value;
+results +=" <br>country: "+ orderForm.elements["my-country"].value;
+results +=" <br>SCHOOL TYPE : "+ orderForm.elements["SCHOOL TYPE"].value;
+results += "<br>Section(Grade): "+ orderForm.elements["my-Section(Grade)"].value;
+var orderResults = document.getElementById ("ENREGISTER");
+orderResults.style.display = "block";
+orderResults.innerHTML = results;
+}
+</script>  
+  </body>
